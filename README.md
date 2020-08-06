@@ -6,7 +6,7 @@ Like the original, its purpose is to allow unlocking hard disks which were locke
 It is released in the hope that it may be useful in environments in which Python 3 is present but Ruby is not, e.g. many (most?) recent Linux LiveCD/LiveUSBs.
 
 ## Usage
-| :warning:WARNING:warning: | Before proceeding any further, connect the disk to the closest thing to a standard native motherboard SATA port you have available.<br><br> Running `hdparm` on disks connected to weird or special SATA ports *can brick them*. Avoid RAID controllers, add-in cards, buggy motherboard ports, and *especially* USB-to-SATA bridges.<br><br> If you want to use a bridge, don't. If you must use a bridge, use the latest available version of `hdparm` and cross-reference [this list](https://www.smartmontools.org/wiki/Supported_USB-Devices). If `smartmontools` is compatible with the bridge hardware (check vendor ID and device ID using `lsusb`) as well as the particular firmware it's running, you may be assured that there is a \~*pretty good, definitely nonzero chance*\~ that `hdparm` is too.<br><br> YOU HAVE BEEN WARNED. |
+| :warning:WARNING:warning: | Before proceeding any further, connect the disk to the closest thing to a standard native motherboard SATA port you have available.<br><br> Running `hdparm` on disks connected to weird or special SATA ports *can brick them*. Avoid RAID controllers, add-in cards, buggy motherboard ports, and *especially* USB-to-SATA bridges.<br><br> YOU HAVE BEEN WARNED. |
 | --- | --- |
 
 The command-line options of this script are compatible with those of [the original](https://github.com/jethrogb/lenovo-password#usage). It may therefore be used in an almost identical fashion:
